@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Understanding SE Ratings - BreezyGames</title>
+        <link rel="icon" href="images/BreezyGames-icon-kite-color.svg" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="bar">
+            <div class="bar-in">
+                <a class="brand" href="index.html">
+                    <img src="images/BreezyGames-icon-kite-color.svg" alt="" />
+                    <span class="brand-name">BreezyGames</span>
+                </a>
+                <input
+                    type="checkbox"
+                    id="nav-toggle"
+                    class="nav-toggle"
+                    aria-label="Menu"
+                />
+                <label for="nav-toggle" class="burger" aria-hidden="true">
+                    <span></span>
+                </label>
+                <nav aria-label="Main">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="free.html">Free puzzles</a>
+                    <!-- <a href="ratings.html" aria-current="page">SE ratings</a> -->
+                    <a href="contact.html">Contact</a>
+                    <a href="books.html">Books</a>
+                </nav>
+            </div>
+        </header>
+        <main class="page col">
+            <h1 class="title">Understanding SE Ratings</h1>
+            <p class="lead">What the numbers on our books mean</p>
+            <hr />
+            <div class="policy prose">
+                <p>
+                    Every puzzle in our books is rated on the SE (Sudoku Explainer) scale,
+                    from 1.0, the easiest, to 11.9, the hardest.
+                </p>
+
+                <h2>The hardest technique sets the rating</h2>
+                <p>
+                    A puzzle&rsquo;s rating comes from the single hardest technique
+                    needed to solve it. Along the way you will also use easier ones, so
+                    a puzzle rated 3.2 still uses everything from the lower levels, and
+                    the X-Wing is the hardest move it asks for.
+                </p>
+
+                <h2>Techniques by rating</h2>
+                <div class="table-wrap">
+                    <table class="ratings">
+                        <thead>
+                            <tr>
+                                <th scope="col">SE rating</th>
+                                <th scope="col">Techniques</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.0 – 1.9</td>
+                                <td>
+                                    Full House, Cross-Hatching, Hidden Single, Direct
+                                    Pointing, Direct Claiming
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.0 – 2.9</td>
+                                <td>
+                                    Direct Hidden Pair/Triplet, Naked Single, Pointing,
+                                    Claiming
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.0 – 3.9</td>
+                                <td>
+                                    Naked Pair/Triplet, Hidden Pair, X-Wing, Swordfish
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4.0 – 4.9</td>
+                                <td>
+                                    Skyscraper, 2-String Kite, XY/XYZ-Wing, Unique
+                                    Rectangles, Unique Loops, Grouped 2 Strong Links
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5.0 – 5.9</td>
+                                <td>
+                                    Naked Quad, Hidden Quad, Jellyfish, WXYZ-Wing, BUG,
+                                    3/4 Skyscrapers, Grouped 3 Strong Links, 4 Strong
+                                    Links
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6.0 – 6.9</td>
+                                <td>
+                                    Aligned Pair Exclusion, VWXYZ/UVWXYZ-Wing, X-Loops,
+                                    Bidirectional Y-Cycle, Grouped 4 Strong Links
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7.0 – 7.9</td>
+                                <td>
+                                    Forcing Chains, Aligned Triplet Exclusion, Nishio
+                                    Forcing Chains
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8.0 – 8.9</td>
+                                <td>
+                                    Region Forcing Chains, Cell Forcing Chains, Dynamic
+                                    Region Forcing Chains
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9.0 – 9.9</td>
+                                <td>
+                                    Dynamic Contradiction Forcing Chains, Dynamic Cell
+                                    Forcing Chains, Dynamic Double Forcing Chains, and
+                                    (+) variants
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10.0 – 10.9</td>
+                                <td>
+                                    Dynamic Forcing Chains combined with other Forcing
+                                    Chains or Multiple Forcing Chains
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11.0 – 11.9</td>
+                                <td>
+                                    Dynamic Forcing Chains combined with other Dynamic
+                                    Forcing Chains
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <details class="all">
+                    <summary>
+                        See the hardest technique at each rating, from 1.2 to 11.9
+                    </summary>
+                    <p class="fine">
+                        Taken from a sample of puzzles in our collection. Technique
+                        names are shown exactly as the software reports them.
+                    </p>
+                    <div class="table-wrap">
+                        <table class="ratings compact">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rating</th>
+                                    <th scope="col">Hardest technique needed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.2</td>
+                                    <td>Hidden Single</td>
+                                </tr>
+                                <tr>
+                                    <td>1.5</td>
+                                    <td>Hidden Single</td>
+                                </tr>
+                                <tr>
+                                    <td>1.7</td>
+                                    <td>Direct Pointing</td>
+                                </tr>
+                                <tr>
+                                    <td>2.0</td>
+                                    <td>Direct Hidden Pair</td>
+                                </tr>
+                                <tr>
+                                    <td>2.3</td>
+                                    <td>Naked Single</td>
+                                </tr>
+                                <tr>
+                                    <td>2.5</td>
+                                    <td>Direct Hidden Triplet</td>
+                                </tr>
+                                <tr>
+                                    <td>2.6</td>
+                                    <td>Pointing</td>
+                                </tr>
+                                <tr>
+                                    <td>2.8</td>
+                                    <td>Claiming</td>
+                                </tr>
+                                <tr>
+                                    <td>3.0</td>
+                                    <td>Naked Pair</td>
+                                </tr>
+                                <tr>
+                                    <td>3.2</td>
+                                    <td>X-Wing</td>
+                                </tr>
+                                <tr>
+                                    <td>3.4</td>
+                                    <td>Hidden Pair</td>
+                                </tr>
+                                <tr>
+                                    <td>3.6</td>
+                                    <td>Naked Triplet</td>
+                                </tr>
+                                <tr>
+                                    <td>3.8</td>
+                                    <td>Swordfish</td>
+                                </tr>
+                                <tr>
+                                    <td>4.0</td>
+                                    <td>Skyscraper 011</td>
+                                </tr>
+                                <tr>
+                                    <td>4.1</td>
+                                    <td>2-String Kite 012</td>
+                                </tr>
+                                <tr>
+                                    <td>4.2</td>
+                                    <td>XY-Wing</td>
+                                </tr>
+                                <tr>
+                                    <td>4.3</td>
+                                    <td>Grouped 2 Strong links 101</td>
+                                </tr>
+                                <tr>
+                                    <td>4.4</td>
+                                    <td>XYZ-Wing</td>
+                                </tr>
+                                <tr>
+                                    <td>4.5</td>
+                                    <td>Unique Rectangle type 1</td>
+                                </tr>
+                                <tr>
+                                    <td>4.6</td>
+                                    <td>Unique Loop 6 type 2</td>
+                                </tr>
+                                <tr>
+                                    <td>4.7</td>
+                                    <td>Unique Rectangle type 3</td>
+                                </tr>
+                                <tr>
+                                    <td>4.8</td>
+                                    <td>Unique Loop 8 type 3</td>
+                                </tr>
+                                <tr>
+                                    <td>5.0</td>
+                                    <td>Naked Quad</td>
+                                </tr>
+                                <tr>
+                                    <td>5.2</td>
+                                    <td>Jellyfish</td>
+                                </tr>
+                                <tr>
+                                    <td>5.4</td>
+                                    <td>3 Skyscrapers 0111</td>
+                                </tr>
+                                <tr>
+                                    <td>5.5</td>
+                                    <td>WXYZ-Wing 126</td>
+                                </tr>
+                                <tr>
+                                    <td>5.6</td>
+                                    <td>WXYZ-Wing 137</td>
+                                </tr>
+                                <tr>
+                                    <td>5.7</td>
+                                    <td>Grouped 3 Strong links 1011</td>
+                                </tr>
+                                <tr>
+                                    <td>5.8</td>
+                                    <td>4 Skyscrapers 01111</td>
+                                </tr>
+                                <tr>
+                                    <td>5.9</td>
+                                    <td>4 Strong links 00111</td>
+                                </tr>
+                                <tr>
+                                    <td>6.0</td>
+                                    <td>4 Strong links 01022</td>
+                                </tr>
+                                <tr>
+                                    <td>6.1</td>
+                                    <td>Grouped 4 Strong links 10111</td>
+                                </tr>
+                                <tr>
+                                    <td>6.2</td>
+                                    <td>VWXYZ-Wing 2515</td>
+                                </tr>
+                                <tr>
+                                    <td>6.3</td>
+                                    <td>VWXYZ-Wing 1411</td>
+                                </tr>
+                                <tr>
+                                    <td>6.4</td>
+                                    <td>VWXYZ-Wing 2311</td>
+                                </tr>
+                                <tr>
+                                    <td>6.6</td>
+                                    <td>Bidirectional Y-Cycle</td>
+                                </tr>
+                                <tr>
+                                    <td>6.7</td>
+                                    <td>Bidirectional Y-Cycle</td>
+                                </tr>
+                                <tr>
+                                    <td>6.8</td>
+                                    <td>Bidirectional Y-Cycle</td>
+                                </tr>
+                                <tr>
+                                    <td>6.9</td>
+                                    <td>Bidirectional Y-Cycle</td>
+                                </tr>
+                                <tr>
+                                    <td>7.0</td>
+                                    <td>Bidirectional Y-Cycle</td>
+                                </tr>
+                                <tr>
+                                    <td>7.1</td>
+                                    <td>Forcing Chain</td>
+                                </tr>
+                                <tr>
+                                    <td>7.2</td>
+                                    <td>Forcing Chain</td>
+                                </tr>
+                                <tr>
+                                    <td>7.3</td>
+                                    <td>Forcing Chain</td>
+                                </tr>
+                                <tr>
+                                    <td>7.4</td>
+                                    <td>Forcing Chain</td>
+                                </tr>
+                                <tr>
+                                    <td>7.5</td>
+                                    <td>Aligned Triplet Exclusion</td>
+                                </tr>
+                                <tr>
+                                    <td>7.7</td>
+                                    <td>Nishio Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>7.8</td>
+                                    <td>Nishio Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>7.9</td>
+                                    <td>Nishio Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.0</td>
+                                    <td>Nishio Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.1</td>
+                                    <td>Nishio Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.2</td>
+                                    <td>Region Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.3</td>
+                                    <td>Region Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.4</td>
+                                    <td>Cell Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.5</td>
+                                    <td>Cell Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.6</td>
+                                    <td>Region Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.7</td>
+                                    <td>Region Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.8</td>
+                                    <td>Dynamic Region Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>8.9</td>
+                                    <td>Dynamic Region Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>9.0</td>
+                                    <td>Dynamic Contradiction Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>9.1</td>
+                                    <td>Dynamic Region Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>9.2</td>
+                                    <td>Dynamic Contradiction Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>9.3</td>
+                                    <td>Dynamic Contradiction Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>9.4</td>
+                                    <td>Dynamic Contradiction Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>9.5</td>
+                                    <td>Dynamic Contradiction Forcing Chains</td>
+                                </tr>
+                                <tr>
+                                    <td>9.6</td>
+                                    <td>Dynamic Cell Forcing Chains (+)</td>
+                                </tr>
+                                <tr>
+                                    <td>9.7</td>
+                                    <td>Dynamic Cell Forcing Chains (+)</td>
+                                </tr>
+                                <tr>
+                                    <td>9.8</td>
+                                    <td>Dynamic Region Forcing Chains (+)</td>
+                                </tr>
+                                <tr>
+                                    <td>9.9</td>
+                                    <td>Dynamic Contradiction Forcing Chains (+)</td>
+                                </tr>
+                                <tr>
+                                    <td>10.0</td>
+                                    <td>Dynamic Contradiction Forcing Chains (+)</td>
+                                </tr>
+                                <tr>
+                                    <td>10.1</td>
+                                    <td>
+                                        Dynamic Cell Forcing Chains (+ Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.2</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.3</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.4</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.5</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.6</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.7</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.8</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.9</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Multiple
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.0</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Multiple
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.1</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Multiple
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.2</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Multiple
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.3</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Multiple
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.4</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Multiple
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.5</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Multiple
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.6</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Dynamic
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.7</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Dynamic
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.8</td>
+                                    <td>
+                                        Dynamic Region Forcing Chains (+ Dynamic Forcing
+                                        Chains)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.9</td>
+                                    <td>
+                                        Dynamic Contradiction Forcing Chains (+ Dynamic
+                                        Forcing Chains)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+                <p>
+                    SE ratings measure logical difficulty, not solving time. Your
+                    experience and familiarity with the techniques will affect how
+                    challenging a puzzle feels.
+                </p>
+                <p>
+                    Our books have friendly level names, from Beginner to Extreme, to help you
+                    find a place to start. Names like Easy or Hard can mean different things to
+                    different publishers, so the SE rating is what tells you the skill level, and
+                    every book states its own rating in the title or subtitle of its listing,
+                    wherever it&rsquo;s sold. The SE bands don&rsquo;t hold equal numbers of techniques,
+                    so we group our books by the techniques they need, and a book&rsquo;s range may
+                    cross more than one band.
+                    <a href="books.html">See all the books</a>.
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div class="foot-in">
+                <span>
+                    &copy; 2026 BreezyGames. Made by puzzle lovers, for puzzle lovers.
+                </span>
+                <span class="foot-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="contact.html">Contact us</a>
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>
