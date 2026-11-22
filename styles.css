@@ -368,15 +368,18 @@ hr {
 }
 
 .free .free-cover img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    width: 100%;
     height: 100%;
-    width: auto;
-    max-width: 100%;
+    object-fit: cover;
+    object-position: center top;
     box-shadow: 0 12px 30px var(--shadow);
+}
+
+@media (max-width: 301px) {
+    .free .free-cover img {
+        object-fit: contain;
+    }
 }
 
 .free-form {
