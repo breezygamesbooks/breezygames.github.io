@@ -386,6 +386,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 560px;
 }
 
 .free-form .formkit-form {
@@ -1045,6 +1046,9 @@ footer {
     .free {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+    .free-form {
+        min-height: 0;
     }
 
     .free .free-cover img {
