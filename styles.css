@@ -386,7 +386,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 560px;
+    /* min-height: 560px; */
 }
 
 .free-form .formkit-form {
