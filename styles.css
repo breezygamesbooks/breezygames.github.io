@@ -355,12 +355,19 @@ hr {
 }
 
 .free {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    display: flex;
+    align-items: stretch;
     gap: 56px;
     max-width: 880px;
+    min-height: 460px;
     margin: 0 auto;
-    align-items: stretch;
+    text-align: center;
+}
+
+.free-cover,
+.free-form {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .free-cover {
@@ -368,6 +375,8 @@ hr {
 }
 
 .free .free-cover img {
+    position: absolute;
+    inset: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -376,24 +385,86 @@ hr {
     box-shadow: 0 12px 30px var(--shadow);
 }
 
-@media (max-width: 930px) {
-    .free .free-cover img {
-        object-fit: contain;
-    }
-}
-
 .free-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 554px;
 }
 
-.free-form .formkit-form {
+@media (max-width: 930px) {
+    .free {
+        min-height: 0;
+    }
+
+    .free-cover {
+        align-self: flex-start;
+    }
+
+    .free .free-cover img {
+        position: static;
+        height: auto;
+        object-fit: initial;
+    }
+}
+
+.free-card {
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+    background: var(--card);
+    border: 1px solid var(--band-line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+/* "Can't see the form?" link: sits behind the form, so it only shows when
+   an ad blocker hides the form. */
+.free-fallback {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.free-card .formkit-form {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
     max-width: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.free-form p.fine {
+.free-card [data-style="card"] {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.free-card .formkit-column:last-child {
+    flex: 1 1 auto;
+}
+
+.free-note {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.free-note p.fine {
     color: var(--muted);
     font-size: 0.92rem;
     line-height: 1.5;
@@ -425,7 +496,7 @@ hr {
 }
 
 .formkit-form .formkit-column {
-    padding: 28px;
+    padding: 20px;
 }
 
 .formkit-form .formkit-column:first-child {
@@ -437,9 +508,10 @@ hr {
 .formkit-form .formkit-header h2 {
     margin: 0;
     font-family: var(--serif);
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 1.2;
     color: var(--title);
+    text-align: center;
 }
 
 .formkit-form .formkit-subheader {
@@ -1044,11 +1116,14 @@ footer {
     }
 
     .free {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        justify-content: center;
         gap: 32px;
     }
+
+    .free-cover,
     .free-form {
-        min-height: 0;
+        flex: none;
     }
 
     .free .free-cover img {
@@ -1059,6 +1134,9 @@ footer {
         max-width: 280px;
         margin: 0 auto;
         display: block;
+    }
+    .free-cover {
+        align-self: stretch;
     }
 
     .perks-section {
