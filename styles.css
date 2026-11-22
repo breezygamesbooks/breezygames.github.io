@@ -376,7 +376,7 @@ hr {
     box-shadow: 0 12px 30px var(--shadow);
 }
 
-@media (max-width: 301px) {
+@media (max-width: 930px) {
     .free .free-cover img {
         object-fit: contain;
     }
