@@ -361,7 +361,6 @@ hr {
     max-width: 880px;
     min-height: 460px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .free-cover,
@@ -370,18 +369,10 @@ hr {
     min-width: 0;
 }
 
-.free-cover {
-    position: relative;
-}
-
 .free .free-cover img {
-    position: absolute;
-    inset: 0;
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    height: auto;
     box-shadow: 0 12px 30px var(--shadow);
 }
 
@@ -398,12 +389,6 @@ hr {
 
     .free-cover {
         align-self: flex-start;
-    }
-
-    .free .free-cover img {
-        position: static;
-        height: auto;
-        object-fit: initial;
     }
 }
 
@@ -449,7 +434,7 @@ hr {
     box-shadow: none;
 }
 
-.free-card [data-style="card"] {
+.free-card .formkit-form [data-style="card"] {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
@@ -457,6 +442,9 @@ hr {
 
 .free-card .formkit-column:last-child {
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .free-note {
@@ -484,6 +472,7 @@ hr {
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 10px 30px var(--shadow);
+    text-align: center;
 }
 
 .formkit-form * {
@@ -496,7 +485,7 @@ hr {
 }
 
 .formkit-form .formkit-column {
-    padding: 20px;
+    padding: 28px;
 }
 
 .formkit-form .formkit-column:first-child {
@@ -508,10 +497,9 @@ hr {
 .formkit-form .formkit-header h2 {
     margin: 0;
     font-family: var(--serif);
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.2;
     color: var(--title);
-    text-align: center;
 }
 
 .formkit-form .formkit-subheader {
@@ -1117,13 +1105,16 @@ footer {
 
     .free {
         flex-direction: column;
-        justify-content: center;
         gap: 32px;
     }
 
     .free-cover,
     .free-form {
         flex: none;
+    }
+
+    .free-cover {
+        align-self: stretch;
     }
 
     .free .free-cover img {
@@ -1134,9 +1125,6 @@ footer {
         max-width: 280px;
         margin: 0 auto;
         display: block;
-    }
-    .free-cover {
-        align-self: stretch;
     }
 
     .perks-section {
@@ -1252,8 +1240,9 @@ footer {
         inset: 0;
         z-index: 1;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 10px;
         padding: 80px 24px 40px;
         background: var(--band) var(--pattern);
@@ -1268,6 +1257,31 @@ footer {
     nav a {
         font-size: 1.7rem;
         padding: 8px 4px;
+    }
+
+    /* Auto margins centre the links when there is room, and let the menu
+       scroll from the top when there is not */
+
+    nav a:first-child {
+        margin-top: auto;
+    }
+
+    nav a:last-child {
+        margin-bottom: auto;
+    }
+}
+
+/* Short screens, such as a phone on its side: tighter menu so all links fit */
+
+@media (max-width: 600px) and (max-height: 560px) {
+    nav {
+        padding: 64px 24px 24px;
+        gap: 0;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+        padding: 6px 4px;
     }
 }
 
