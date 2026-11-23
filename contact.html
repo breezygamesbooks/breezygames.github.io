@@ -3,45 +3,93 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Contact – BreezyGames</title>
+
+        <title>Contact BreezyGames | Book Questions & Support</title>
+        <meta
+            name="description"
+            content="Have a question about a BreezyGames Sudoku book, a missing page, or a printing problem? Contact James and Arnelyn by email."
+        />
+
         <link rel="icon" href="images/BreezyGames-icon-kite-color.svg" />
         <link rel="stylesheet" href="styles.css" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="BreezyGames" />
+        <meta
+            property="og:title"
+            content="Contact BreezyGames | Book Questions & Support"
+        />
+        <meta
+            property="og:description"
+            content="Questions about a BreezyGames Sudoku book, a missing page, or a printing problem? Get in touch with James and Arnelyn."
+        />
+        <meta property="og:url" content="https://breezygamesbooks.com/contact.html" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta
+            name="twitter:title"
+            content="Contact BreezyGames | Book Questions & Support"
+        />
+        <meta
+            name="twitter:description"
+            content="Need help with a BreezyGames Sudoku book? Contact James and Arnelyn by email."
+        />
     </head>
     <body>
         <header class="bar">
             <div class="bar-in">
                 <a class="brand" href="index.html">
-                    <img src="images/BreezyGames-icon-kite-color.svg" alt="" />
+                    <img src="images/icons/BreezyGames-icon-kite-color.svg" alt="" />
                     <span class="brand-name">BreezyGames</span>
                 </a>
+
                 <input
                     type="checkbox"
                     id="nav-toggle"
                     class="nav-toggle"
                     aria-label="Menu"
                 />
+
                 <label for="nav-toggle" class="burger" aria-hidden="true">
                     <span></span>
                 </label>
+
                 <nav aria-label="Main">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="free.html">Free puzzles</a>
-                    <!-- <a href="ratings.html">SE ratings</a> -->
-                    <a href="contact.html" aria-current="page">Contact</a>
-                    <a href="books.html">Books</a>
+                    <a href="/">Home</a>
+                    <a href="/about.html">About Us</a>
+                    <a href="/free.html">Free puzzles</a>
+                    <a href="/contact.html" aria-current="page">Contact</a>
+                    <a href="/books.html">Books</a>
                 </nav>
             </div>
         </header>
         <main class="page col">
             <h1 class="title">Contact BreezyGames</h1>
             <p class="lead">
-                Questions about a book, a missing page or a printing problem? Send us a
-                note.
+                Questions about a book, a missing page, or a printing problem? We'd be
+                happy to hear from you.
             </p>
             <hr />
             <div class="contact-box">
-                <p class="addr">breezygames.books@gmail.com</p>
+                <!-- <p class="addr">breezygames.books@gmail.com</p> -->
+
+                <button
+                    class="addr copy-email"
+                    type="button"
+                    onclick="
+                        navigator.clipboard
+                            .writeText('breezygames.books@gmail.com')
+                            .then(() => {
+                                this.textContent = 'Email copied!';
+                                setTimeout(() => {
+                                    this.textContent = 'breezygames.books@gmail.com';
+                                }, 2000);
+                            })
+                    "
+                >
+                    breezygames.books@gmail.com
+                </button>
+
                 <p>Choose how you'd like to write to us:</p>
                 <ul class="mail-links">
                     <li>
@@ -76,15 +124,98 @@
                 </p>
             </div>
         </main>
-        <footer>
+        <footer class="site-footer">
             <div class="foot-in">
-                <span>
-                    &copy; 2026 BreezyGames. Made by puzzle lovers, for puzzle lovers.
-                </span>
-                <span class="foot-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="contact.html">Contact us</a>
-                </span>
+                <span>&copy; 2026 BreezyGames. All rights reserved.</span>
+
+                <div class="footer-right">
+                    <span class="foot-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="contact.html">Contact Us</a>
+                    </span>
+
+                    <div class="social-links">
+                        <!-- Pinterest -->
+                        <a
+                            href="https://www.pinterest.com/breezygames2026/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Pinterest"
+                            title="Pinterest"
+                        >
+                            <img
+                                src="images/icons/pinterest.png"
+                                alt=""
+                                width="28"
+                                height="28"
+                            />
+                        </a>
+
+                        <!-- Facebook -->
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61572479215487"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            title="Facebook"
+                        >
+                            <img
+                                src="images/icons/Facebook_Logo_Primary.png"
+                                alt=""
+                                width="27"
+                                height="27"
+                            />
+                        </a>
+
+                        <!-- X -->
+                        <a
+                            href="https://x.com/Breezygamesbook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="X"
+                            title="X / Twitter"
+                        >
+                            <img
+                                src="images/icons/x-logo-white.png"
+                                alt=""
+                                width="22"
+                                height="22"
+                            />
+                        </a>
+
+                        <!-- Instagram -->
+                        <a
+                            href="https://www.instagram.com/breezygames2026/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            title="Instagram"
+                        >
+                            <img
+                                src="images/icons/Instagram_Glyph_Gradient.png"
+                                alt=""
+                                width="26"
+                                height="26"
+                            />
+                        </a>
+
+                        <!-- Threads -->
+                        <a
+                            href="https://www.threads.com/@breezygames2026"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Threads"
+                            title="Threads"
+                        >
+                            <img
+                                src="images/icons/threads-logo-white.png"
+                                alt=""
+                                width="24"
+                                height="24"
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

@@ -3,10 +3,31 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>BreezyGames – Enjoy Sudoku, one puzzle at a time</title>
+
+        <!-- Facebook and other Open Graph platforms -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="BreezyGames" />
+        <meta property="og:title" content="BreezyGames - Sudoku Puzzles" />
         <meta
-            name="description"
-            content="Enjoy thoughtfully made Sudoku puzzles with one solution, accurate answer keys and meaningful difficulty ratings. Join the BreezyGames newsletter for free weekly puzzles."
+            property="og:description"
+            content="Enjoy carefully made Sudoku puzzles with reliable answer keys and clear difficulty ratings. Get 30 free puzzles when you join our newsletter."
+        />
+        <meta
+            property="og:image"
+            content="https://breezygamesbooks.com/images/puzzle-on-table.png"
+        />
+        <meta property="og:url" content="https://breezygamesbooks.com/" />
+
+        <!-- X (formerly Twitter) and compatible platforms -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="BreezyGames - Sudoku Puzzles" />
+        <meta
+            name="twitter:description"
+            content="Enjoy Sudoku puzzles, get a new puzzle every week and discover our books."
+        />
+        <meta
+            name="twitter:image"
+            content="https://breezygamesbooks.com/images/puzzle-on-table.png"
         />
         <link rel="icon" href="images/BreezyGames-icon-kite-color.svg" />
         <link rel="stylesheet" href="styles.css" />
@@ -16,7 +37,7 @@
         <header class="bar">
             <div class="bar-in">
                 <a class="brand" href="index.html">
-                    <img src="images/BreezyGames-icon-kite-color.svg" alt="" />
+                    <img src="images/icons/BreezyGames-icon-kite-color.svg" alt="" />
                     <span class="brand-name">BreezyGames</span>
                 </a>
 
@@ -32,98 +53,97 @@
                 </label>
 
                 <nav aria-label="Main">
-                    <a href="index.html" aria-current="page">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="free.html">Free puzzles</a>
-                    <!-- <a href="ratings.html">SE ratings</a> -->
-                    <a href="contact.html">Contact</a>
-                    <a href="books.html">Books</a>
+                    <a href="/" aria-current="page">Home</a>
+                    <a href="/about.html">About Us</a>
+                    <a href="/free.html">Free puzzles</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/books.html">Books</a>
                 </nav>
             </div>
         </header>
 
         <main>
             <section class="hero wrap">
-                <h1>A little time, a pencil, and a Sudoku puzzle worth solving.</h1>
+                <h1>A Little Time, A Pencil, and the Joy of Sudoku</h1>
 
                 <p class="sub">
-                    Thoughtfully made puzzles for people who love the simple pleasure of
-                    solving.
+                    Sudoku puzzles for anyone who enjoys a good challenge, from an easy
+                    warm-up to a grid that takes a little more thought.
                 </p>
+
+                <a class="btn" href="free.html">Get 30 free puzzles</a>
 
                 <img
                     class="scene"
-                    src="images/puzzle-on-table.svg"
-                    alt="A peaceful Sudoku-solving moment, with a pencil resting beside a partly completed puzzle on a table"
+                    src="images/assets/puzzle-on-table.svg"
+                    alt="A Sudoku puzzle with a pencil resting beside it on a table"
                     width="1200"
                     height="600"
                 />
             </section>
 
             <section class="note col">
-                <h2>Sudoku should be a pleasure, not a guessing game</h2>
+                <h2>Sudoku puzzles made with care</h2>
 
                 <p>
-                    There's something satisfying about settling down with a Sudoku
-                    puzzle. A pencil in hand, a few quiet moments, and the pleasure of
-                    watching a solution slowly come together.
+                    At BreezyGames, we enjoy making Sudoku puzzles as much as we hope
+                    you enjoy solving them.
                 </p>
 
                 <p>
-                    That enjoyment can disappear when a puzzle has more than one
-                    solution, an answer key contains mistakes, or a difficulty label
-                    doesn't tell you what to expect. So we made BreezyGames the way we
-                    wished puzzles were made.
+                    Every puzzle has one solution and a matching answer key. We also
+                    make each puzzle unique, so when you finish one and start another,
+                    you'll have a fresh challenge ahead.
                 </p>
 
                 <p>
-                    Every puzzle we create has exactly one solution and a matching
-                    answer key. We also make sure our puzzles don't repeat, so each one
-                    gives you something new to enjoy.
+                    Whether you enjoy an easy puzzle with your morning coffee or
+                    something that makes you think a little harder, there's a puzzle
+                    here for you.
                 </p>
 
                 <p>
                     Curious who's behind them?
-                    <a href="about.html">Meet James and Arnelyn</a>
-                    .
+                    <a href="about.html">Meet James and Arnelyn</a>.
                 </p>
             </section>
 
             <section class="meaning col" id="ratings">
-                <h2>Difficulty that means something</h2>
+                <h2>Difficulty levels you can understand</h2>
 
                 <p>
-                    A label like Easy or Expert only helps if it tells you something.
-                    Different puzzle makers use the same names for very different
-                    puzzles. So every level we name is tied to a Sudoku Explainer (SE)
-                    rating, which is based on the solving techniques a puzzle requires,
-                    not the number of empty squares or an estimated solving time. It's
-                    not the whole story of how hard a puzzle will feel to every solver,
-                    but it's a useful guide to what lies ahead.
+                    Not all Sudoku puzzles are equally challenging, and knowing what to
+                    expect makes choosing your next puzzle easier.
+                </p>
+
+                <p>
+                    At BreezyGames, our difficulty levels are based on Sudoku Explainer
+                    (SE) ratings. These ratings reflect the solving techniques needed to
+                    complete a puzzle, rather than simply counting the empty squares or
+                    estimating how long it might take.
+                </p>
+
+                <p>
+                    Of course, everyone solves puzzles differently, so a rating can't
+                    tell you exactly how difficult a puzzle will feel. But it gives you
+                    a useful idea of the challenge ahead.
                 </p>
 
                 <p>
                     <a href="ratings.html">Learn about SE ratings</a>
-                    and what the different levels mean.
+                    and how our difficulty levels are determined.
                 </p>
             </section>
 
             <section class="note col">
-                <h2>Enjoy a break from the screen</h2>
+                <h2>Sudoku is even better on paper</h2>
+
+                <p> Find a comfortable chair, pick up your pencil, and get started. </p>
 
                 <p>
-                    Sudoku doesn't have to mean another app, another screen, or another
-                    notification.
-                </p>
-
-                <p>
-                    There's a particular pleasure in solving on paper. You can take a
-                    puzzle to your favourite chair, work through it at your own pace,
-                    make notes in the margins, erase a mistake and carry on.
-                </p>
-
-                <p>
-                    No battery, no charger and no distractions. Just you and the puzzle.
+                    Write down possible numbers, erase a mistake, or leave a puzzle
+                    unfinished and come back to it later. No screen to stare at, no
+                    notifications to interrupt you.
                 </p>
             </section>
 
@@ -132,28 +152,112 @@
                     <h2>Come solve with us</h2>
 
                     <p>
-                        Join the BreezyGames newsletter and get a new Sudoku puzzle every
-                        week, plus free printable puzzle packs, solving tips as we learn
-                        them, and word when a new book is out.
+                        Join the BreezyGames newsletter and get a free collection of 30
+                        Sudoku puzzles, delivered as a PDF straight to your inbox.
                     </p>
 
-                    <p>It's a little something for your next quiet moment.</p>
+                    <p>
+                        You'll also get a new puzzle every week and hear about our
+                        latest books.
+                    </p>
 
                     <a class="btn" href="free.html">Get your free puzzles</a>
                 </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="site-footer">
             <div class="foot-in">
-                <span>
-                    &copy; 2026 BreezyGames. Made by puzzle lovers, for puzzle lovers.
-                </span>
+                <span>&copy; 2026 BreezyGames. All rights reserved.</span>
 
-                <span class="foot-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="contact.html">Contact us</a>
-                </span>
+                <div class="footer-right">
+                    <span class="foot-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="contact.html">Contact Us</a>
+                    </span>
+
+                    <div class="social-links">
+                        <!-- Pinterest -->
+                        <a
+                            href="https://www.pinterest.com/breezygames2026/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Pinterest"
+                            title="Pinterest"
+                        >
+                            <img
+                                src="images/icons/pinterest.png"
+                                alt=""
+                                width="28"
+                                height="28"
+                            />
+                        </a>
+
+                        <!-- Facebook -->
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61572479215487"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            title="Facebook"
+                        >
+                            <img
+                                src="images/icons/Facebook_Logo_Primary.png"
+                                alt=""
+                                width="27"
+                                height="27"
+                            />
+                        </a>
+
+                        <!-- X -->
+                        <a
+                            href="https://x.com/Breezygamesbook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="X"
+                            title="X / Twitter"
+                        >
+                            <img
+                                src="images/icons/x-logo-white.png"
+                                alt=""
+                                width="22"
+                                height="22"
+                            />
+                        </a>
+
+                        <!-- Instagram -->
+                        <a
+                            href="https://www.instagram.com/breezygames2026/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            title="Instagram"
+                        >
+                            <img
+                                src="images/icons/Instagram_Glyph_Gradient.png"
+                                alt=""
+                                width="26"
+                                height="26"
+                            />
+                        </a>
+
+                        <!-- Threads -->
+                        <a
+                            href="https://www.threads.com/@breezygames2026"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Threads"
+                            title="Threads"
+                        >
+                            <img
+                                src="images/icons/threads-logo-white.png"
+                                alt=""
+                                width="24"
+                                height="24"
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>
